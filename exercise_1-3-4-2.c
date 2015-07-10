@@ -22,6 +22,8 @@ int main(int argc, char *argv[])
 		// x=y^2+r && r>=2y+1
 		// x=(y+1)y+(r-y)
 		// Decrease r while maintaining invariant
+		r= ;
+		y=;
 		// x=y^2+r && r>=0 && y>=0
 	}
 
