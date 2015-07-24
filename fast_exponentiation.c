@@ -28,6 +28,26 @@
  * x^n=y*z^k=y*(z*z)^(k/2)
  * 
  * so that dividing k by 2 and squaring z will maintain the invariant
+ * 
+ * This suggests a version of "Decrease k while maintaining invariant"
+ * 
+ * k=k/2; z=z*z;
+ *
+ * But this only works when k is even. The first solution you might
+ * consider is 
+ * 	
+ * 	if (odd(k)) {
+ * 		k=k-1; y=y*z;
+ * 	} else {
+ *		k=k/2; z=z*z;
+ *	}
+ *
+ * A more subtle approach devised by E Djikstra is instead of branching,
+ * to make k even:
+ *
+ * 	"make k even while maintaining invariant";
+ *	// y*
+ *
  *********************************************************************/
 #include <stdio.h>
 
