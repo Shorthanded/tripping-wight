@@ -82,7 +82,7 @@ int main (int argc, char *argv[])
   k=n; y=1; z=x;
   // whileinv: y*z^k=x^n && k>=0
   while(k!=0){
-  	if ( (odd(k) ) { k=k-1; y=y*z; }
+  	if ( k%2 != 0 ) { k=k-1; y=y*z; }
         //y*z^k=x^n && k>=0 && even(k)
  	k=k/2; z=z*z;
 	}
