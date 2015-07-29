@@ -9,22 +9,49 @@
  **********************************************************************/
 
 #include <stdio.h>
+#include <stdbool.h>
+#include <assert.h>
 
-int main(int argc; char * argv[]){
+bool odd(int x);
+bool even(int x);
+
+int main(int argc, char* argv[]){
 	
 	int k, w, x, y, z;
 
-	// y >= 0
+	puts("Calculates x * y.");
+	puts("Enter x: ");
+	scanf("%d", &x);
+	puts("Enter y: ");
+	scanf("%d", &y);
+
+	 assert( y>=0 );
 	
 	// "Acheive invariant:"
 	// whileinv: z + w * k = x * y && k >= 0
 	w = x; k = y; z = 0;
 	while( k != 0 ) {
 		// "Decrease k while maintaining invariant"
-		k-=1;
+		// since 2x * y = x * 2y
+		if ( odd( k ) ) {
+		       k=k-1; z=z+w;
+		}	       
+		k=k/2; w=w*2;
 		}
 
 	// z == x * y
 	
+	printf("%d times %d equals %d", x, y, z);
+	
 	return 0;
 }	
+
+bool odd(int x) {
+	if ( x%2 == 0 ) return false;
+	return true;
+}
+
+bool even(int x) {
+	if ( x%2 == 0) return true;
+	return false;
+}
