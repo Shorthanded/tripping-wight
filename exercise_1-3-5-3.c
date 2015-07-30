@@ -25,7 +25,7 @@ int main(int argc, char* argv[]){
 	puts("Enter y: ");
 	scanf("%d", &y);
 
-	 assert( y>=0 );
+	assert( y>=0 );
 	
 	// "Acheive invariant:"
 	// whileinv: z + w * k = x * y && k >= 0
