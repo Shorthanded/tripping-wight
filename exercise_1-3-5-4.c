@@ -12,7 +12,7 @@
 bool odd(int x);
 bool even(int x);
 
-int main(int argc, charg* argv[]){
+int main(int argc, char* argv[]){
 
 	int x, y, z, n, q, r;
 
@@ -41,7 +41,7 @@ int main(int argc, charg* argv[]){
 		n=n-1;
 		z=z/2;
 		r=r-z;
-		q=q+1;
+		q=q+n;
 	}
 
 	assert( x==q*y+r && 0<=r<=y);
@@ -58,6 +58,6 @@ bool odd(int x) {
 }
 
 bool even(int x) {
-	if( X%2==0 ) return true;
+	if( x%2==0 ) return true;
 	return false;
 }
