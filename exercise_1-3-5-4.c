@@ -41,7 +41,7 @@ int main(int argc, char* argv[]){
 		n=n-1;
 		z=z/2;
 		r=r-z;
-		q=q+n;
+		q=q+n; // need to fix
 	}
 
 	assert( x==q*y+r && 0<=r<=y);
