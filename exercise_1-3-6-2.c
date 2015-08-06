@@ -25,8 +25,14 @@
 
 int main(int argv, char* argc[]){
 
+	int a, b, g, k, t;	
 	// a<=0 and b<=0
-	
+	g=a;k=b;t=0;
+	// acheive invariant
+	// whileinv: ??? and k>=0
+	while( k!=0 ){
+		t=g; g=k; k=t%k;
+	}
 	// Compute GCD
 	
 	// g=gcd(a, b)
