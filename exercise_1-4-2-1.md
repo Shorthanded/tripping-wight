@@ -19,7 +19,7 @@
 > then each specification in the tableau
 
 > {P}{Q<sub>0</sub>}X<sub>1</sub>:=E<sub>1</sub>;
-{Q<sub>1</sub>}X<sub>2</sub>:=E<sub>2</sub>;...;{Q<sub>n-1</sub>}
+{Q<sub>1</sub>}X<sub>2</sub>:=E<sub>2</sub>;...;
 {Q<sub>n-1</sub>}X<sub>n</sub>:=E<sub>n</sub>;{Q}
 
 > will be inferable from the asignment rule, so that the tableau will
