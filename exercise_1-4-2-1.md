@@ -10,8 +10,8 @@ y=yxy;
 {y<=3}
 
 > Let Q<sub>n</sub> be Q, 
-> Q<sub>n-1</sub> be Q<sub>n</sub>|<sub>X<sub>n</sub>->E<sub>n<\sub>
-> Q<sub>n-2</sub> be Q<sub>n-1</sub>|<sub>X<sub>n-1</sub>->E<sub>n-1<\sub>
+> Q<sub>n-1</sub> be Q<sub>n</sub>|<sub>X<sub>n</sub>->E<sub>n<\sub><\sub>
+> Q<sub>n-2</sub> be Q<sub>n-1</sub>|<sub>X<sub>n-1</sub>->E<sub>n-1<\sub><\sub>
 > and so forth.
 > then each specification in the tableau
 > {P}{Q<sub>0</sub>}X<sub>1</sub>:=E<sub>1</sub>;
